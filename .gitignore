@@ -1,0 +1,21 @@
+# === GODOT 4 PROJECT IGNORE ===
+
+# Godot-generated import files (cached assets)
+.import/
+
+# Godot internal project data
+.godot/
+
+# Export preset and config files (optional to ignore if you want them versionerade)
+export.cfg
+export_presets.cfg
+
+# Android build folder (if you export for Android)
+android/
+
+# Temporary files (e.g. OS or editor-specific)
+.DS_Store
+Thumbs.db
+
+# Compiled binaries or builds (if you generate them here)
+bin/

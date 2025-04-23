@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx3kl4ux8eleg"]
+
+[ext_resource type="Script" path="res://scenes/animal/animal/Animal.cs" id="1_f1n5o"]
+
+[node name="Animal" type="Node2D"]
+script = ExtResource("1_f1n5o")
+
+[node name="NavAgent" type="NavigationAgent2D" parent="."]

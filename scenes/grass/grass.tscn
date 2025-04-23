@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://dr8vfbabbt2uh"]
+
+[ext_resource type="Texture2D" uid="uid://c0ymjm4eench4" path="res://graphics/world/EMPTY.png" id="1_e4xdy"]
+[ext_resource type="Script" path="res://scenes/grass/scripts/Grass.cs" id="1_xgg6o"]
+[ext_resource type="Texture2D" uid="uid://bxiqkj6a8prrd" path="res://graphics/world/grass_stage1.png" id="2_1jq5m"]
+[ext_resource type="Texture2D" uid="uid://cm1bq2pslrqio" path="res://graphics/world/grass_stage2.png" id="3_upafe"]
+[ext_resource type="Texture2D" uid="uid://bvnvarkx61rou" path="res://graphics/world/grass_stage3.png" id="4_x230o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_401gf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_e4xdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1jq5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_upafe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x230o")
+}],
+"loop": true,
+"name": &"GrowingStages",
+"speed": 1.0
+}]
+
+[node name="Grass" type="Node2D" groups=["Grass"]]
+script = ExtResource("1_xgg6o")
+
+[node name="GrassAnimation" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_401gf")
+animation = &"GrowingStages"
+
+[node name="GrowthTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true

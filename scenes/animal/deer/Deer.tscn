@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://d0hg48i64atdw"]
+
+[ext_resource type="Script" path="res://scenes/animal/deer/Deer.cs" id="1_usxkl"]
+[ext_resource type="Texture2D" uid="uid://b4rb8difbvmld" path="res://graphics/world/deer_male.png" id="2_cvcte"]
+[ext_resource type="Texture2D" uid="uid://c855lgy7j2k4p" path="res://graphics/world/deer_female.png" id="3_48ruh"]
+[ext_resource type="Texture2D" uid="uid://bjciho6i0e61b" path="res://graphics/world/deer_dead.png" id="4_smc2f"]
+[ext_resource type="Texture2D" uid="uid://dxlm73tmdno22" path="res://graphics/world/deer_remains.png" id="5_d07gw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vf4yp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cvcte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_48ruh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_smc2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d07gw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Deer" type="CharacterBody2D"]
+script = ExtResource("1_usxkl")
+
+[node name="DeerSprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_vf4yp")
+frame_progress = 0.933135
+
+[node name="EatingLabel" type="Label" parent="."]
+offset_left = -39.0
+offset_top = -27.0
+offset_right = 83.0
+offset_bottom = -4.0
+scale = Vector2(0.653099, 1.04794)
+horizontal_alignment = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(1.51302, 0.451695)
+polygon = PackedVector2Array(-9.91395, -8.85553, -8.59209, -13.2833, -6.6093, -13.2833, -4.62651, -8.85553, 2.64372, -8.85553, 8.59209, -4.42776, 8.59209, 4.42776, 2.64372, 8.85553, -0.520138, 8.85553, -4.96632, 8.85553, -5.94837, 13.2833, -8.59209, 13.2833, -9.91395, 8.85553)

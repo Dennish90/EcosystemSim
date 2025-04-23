@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=3 uid="uid://br4cpg2mi20xg"]
+
+[ext_resource type="Script" path="res://scenes/gameUI/scripts/GameUI.cs" id="1_eob5q"]
+
+[node name="GameUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_eob5q")
+
+[node name="SpeedLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 172.0
+offset_bottom = 23.0
+text = "Speed : {gameSpeed}"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 26.0
+offset_right = 51.0
+offset_bottom = 66.0
+scale = Vector2(0.806827, 0.48163)
+
+[node name="Pause" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "||"
+
+[node name="Speed1x" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "1x"
+
+[node name="Speed2x" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "2x"
+
+[node name="Speed4x" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "4x"
+
+[node name="Speed10x" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "10x"
+
+[node name="Speed20x" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "20x"
+
+[node name="ClockLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 834.0
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 25.0
+text = "Hej"
