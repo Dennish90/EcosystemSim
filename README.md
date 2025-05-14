@@ -1,4 +1,6 @@
-# EcosystemSim – Nature Simulation in Godot
+[ENG](#ecosystemsim---nature-simulation-in-godot) | [SV](#ecosystemsim---natursimulering-i-godot)
+
+# EcosystemSim - Nature Simulation in Godot
 
 **EcosystemSim** is a dynamic nature and AI simulation built in Godot, modeling the interactions between animals and plants within an evolving ecosystem. The project aims to simulate survival behavior, symbiosis, reproduction, decay, and environmental effects in a modular and extensible way.
 
@@ -7,7 +9,7 @@
 
 ---
 
-## 🧠 Structure & Philosophy
+## Structure & Philosophy
 
 The code is built with modularity and inheritance in mind, making it easy to expand and maintain as complexity increases.
 
@@ -35,7 +37,7 @@ Current mechanics include:
 
 ---
 
-## 🌱 Planned Features / Roadmap
+## Planned Features / Roadmap
 
 ### Breeding System
 - [x] Mating logic
@@ -62,12 +64,12 @@ Plant
 
 ---
 
-## 🚧 Current Status
+## Current Status
 This project is under active development and will serve as a long-term portfolio piece and eventual exam project. It is intended as a sandbox for ecosystem design and emergent behavior, not as a traditional game.
 
 ---
 
-# EcosystemSim – Natursimulering i Godot (Svenska)
+# EcosystemSim - Natursimulering i Godot
 
 **EcosystemSim** är en natursimulering byggd i Godot där djur, växter och miljön interagerar i ett levande ekosystem. Projektet syftar till att simulera överlevnad, symbios, förökning, nedbrytning och miljöpåverkan i en modulär struktur.
 
@@ -76,7 +78,7 @@ This project is under active development and will serve as a long-term portfolio
 
 ---
 
-## 🧠 Struktur & Designfilosofi
+## Struktur & Designfilosofi
 
 ### Djursystem
 Djurklasserna är uppdelade enligt följande:
@@ -102,7 +104,7 @@ Redan implementerat:
 
 ---
 
-## 🌱 Roadmap / Att göra
+## Roadmap / Att göra
 
 ### Förökningssystem
 - [x] Parning
@@ -130,5 +132,5 @@ Plant
 
 ---
 
-## 🚧 Status
+## Status
 Projektet är under aktiv utveckling och kommer fungera som ett framtida examensarbete. Det är utformat som en simuleringsplattform för ekosystem och emergenta beteenden, inte som ett spel med mål eller slut.
